@@ -1,6 +1,7 @@
 import unittest # Importing the unittest module
 from user import User # importing the user class
 
+
 class TestUser(unittest.TestCase):
     """
     test class that defines the test cases for the user behaviours,
@@ -40,6 +41,8 @@ class TestUser(unittest.TestCase):
         test_user.save_user()
         self.new_user.delete_user() #deleting a user object
         self.assertEqual(len(User.user_list),1)
+    
+
 
 if __name__ == '__main__':
     unittest.main()
