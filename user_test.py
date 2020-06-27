@@ -9,6 +9,10 @@ class TestUser(unittest.TestCase):
     def setUp(self):
 
         self.new_user = User("daisy", "1234")
+    
+    def tearDown(self):
+
+        User.user_list = []
 
     def test_init(self):
         """
@@ -21,6 +25,13 @@ class TestUser(unittest.TestCase):
 
         self.new_user.save_user()#saving the new user
         self.assertEqual(len(User.user_list),1)
-        
+    
+    def test_save_multiple_user(self):
+
+        self.new_user.save_user()
+        test_user = User("Test", "0000")#new contact
+        test_user.save_user()
+        self.assertEqual(len(User.user_list),2)
+
 if __name__ == '__main__':
     unittest.main()
