@@ -40,3 +40,10 @@ class Credentials:
         """
         return cls.user_credentials
 
+    @classmethod
+    def generate_password(cls):
+        """
+        method to generate passwords for our accounts
+        """
+        
+
