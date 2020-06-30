@@ -1,3 +1,4 @@
+import random
 class User:
     """
     class that generates new instances of users
@@ -45,5 +46,5 @@ class Credentials:
         """
         method to generate passwords for our accounts
         """
-        
+
 
