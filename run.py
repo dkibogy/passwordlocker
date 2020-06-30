@@ -29,21 +29,33 @@ def main():
         while confirm_password != create_user_password:
             print("wrong password")
             print("try again")
+            print('\n')
             create_user_password= input()
             print("confirm")
+            print('\n')
             confirm_password = input()
         else:
             print(f"account created successful {create_user_name}!")
             print("login")
+            print('\n')
             typed_username = input()
             print("password")
+            print('\n')
             typed_password = input()
         while typed_username != create_user_name or typed_password != create_user_password:
             print("invalid password or username, try again")
+            print('\n')
             typed_username = input()
+            print('\n')
             print("password")
             typed_password = input()
-            
+    if short_code == 'lg':
+        print("login")
+        print('enter username')
+
+
+
+
 
 
 if __name__ == '__main__':
