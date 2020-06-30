@@ -46,5 +46,10 @@ class Credentials:
         """
         method to generate passwords for our accounts
         """
+        chars = 'abcdefghijklmnopqrstuvwxyz-1234567890&ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$'
+        p_length = 12
+        out = [random.choice(chars) for i in range(p_length)]
+        generated = "".join(out)
+        return generated
 
 
