@@ -49,9 +49,30 @@ def main():
             print('\n')
             print("password")
             typed_password = input()
-    if short_code == 'lg':
+    elif short_code == 'lg':
         print("login")
         print('enter username')
+        login_username = input()
+        print('\n')
+        print("password")
+        login_userpassword = input()
+        print('\n')
+        while login_username != 'default' or login_userpassword != 'default-password':
+            print ('invalid input for generic use user: default and password: 0000')
+            print ('enter valid username')
+            print('\n')
+            login_username = input()
+            print ('\n')
+            login_userpassword = input()
+        else:
+            print('Your in')
+    
+
+        
+            
+        
+
+
 
 
 

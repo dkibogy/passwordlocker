@@ -15,3 +15,20 @@ class User:
     def delete_user(self):
 
         User.user_list.remove(self)
+class Credentials:
+
+    user_credentials = []
+
+    def __init__(self, account_type, username, password):
+
+        self.account_type = account_type
+        self.username = username
+        self.password = password
+    def save_account(self):
+
+        Credentials.user_credentials.append(self)
+    
+    def delete_account(self):
+
+        Credentials.user_credentials.remove(self)
+
