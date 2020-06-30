@@ -1,4 +1,5 @@
 import random
+
 class User:
     """
     class that generates new instances of users
@@ -59,6 +60,18 @@ class Credentials:
         for account in cls.user_credentials:
             if account.account_type == search:
                 return account 
+    @classmethod
+    def copy_p(cls):
+        """
+        copy passwords
+        
+        for account in cls.user_credentials:
+            pyperclip.copy(account.password)
+            pyperclip.paste()
+
+        """ 
+
+
 
 
 

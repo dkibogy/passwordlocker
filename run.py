@@ -1,5 +1,6 @@
 #!/usr/bin/env python3.8
 from user import User
+from user import Credentials
 
 def create_user(name, password):
     new_user = User(name, password)
@@ -10,6 +11,10 @@ def save_user(user):
 
 def del_user(user):
     user.delete_user()
+
+def create_account(account, username, passwrd):
+    new_account = Credentials(account,username,passwrd)
+    return new_account
 
 def main():
     print("Hello, Welcome to password Locker")
