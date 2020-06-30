@@ -51,5 +51,17 @@ class Credentials:
         out = [random.choice(chars) for i in range(p_length)]
         generated = "".join(out)
         return generated
+    @classmethod
+    def search_accounts(cls, search):
+        """
+        method for searching accounts already saved to fulfil  user stories no 5 requirement
+        """
+        for account in cls.user_credentials:
+            if account.account_type == search:
+                return account 
+
+
+
+
 
 
