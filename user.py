@@ -32,3 +32,11 @@ class Credentials:
 
         Credentials.user_credentials.remove(self)
 
+    @classmethod
+    def show_accounts(cls):
+        """
+        method that will show all the accounts saved in our locker
+
+        """
+        return cls.user_credentials
+
