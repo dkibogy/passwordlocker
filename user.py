@@ -69,7 +69,7 @@ class Credentials:
             pyperclip.copy(account.password)
             pyperclip.paste()
 
-        """ 
+        """ # pyperclip import not working
 
 
 
